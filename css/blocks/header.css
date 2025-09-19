@@ -51,8 +51,19 @@
 }
 
 
+.header__aside{
+    display: flex;
+    gap: 36px;
+}
+
+.header__aside-btn{
+    padding: 0;
+}
+
 .header__aside-favorite{
     position: relative;
+    display: flex;
+    
 
 
 }
@@ -65,13 +76,11 @@
 }
 .header__aside-favorite-numb{
     position: absolute;
-    right: 9px;
-    left: 9px;
-    bottom:4px;
-    top: 4px;
+    color: #fff;
     font-weight: 300;
     font-size: 10px;
     line-height: 12px;
-    
+    left: 9px;
+    top: 4px;
     
 }

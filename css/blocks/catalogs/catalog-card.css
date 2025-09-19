@@ -4,7 +4,7 @@
 }
 
 .catalog-card__top {
-	row-gap: 48px;
+	row-gap: 16px;
 	display: flex;
 	flex-direction: column;
 	padding: 20px;
