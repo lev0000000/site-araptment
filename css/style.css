@@ -14,5 +14,8 @@
 @import "blocks/catalogs/catalog-heading.css";
 @import "blocks/catalogs/catalog-list.css";
 @import "blocks/catalogs/catalog-card.css";
+@import "blocks/custom-radio.css";
+@import "blocks/custom-checkbox.css";
+@import "blocks/custom-input.css";
 @import "blocks/parameter-card.css";
 

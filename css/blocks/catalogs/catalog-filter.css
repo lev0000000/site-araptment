@@ -1,3 +1,57 @@
 .catalog-filter{
     width: 330px;
 }
+
+.catalog-filter__heading{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 27px;
+}
+
+.catalog-filter__heading-list-numb{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.04em;
+}
+
+.catalog-filter__heading-btn{
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    padding: 0;
+}
+
+.catalog-filter__heading-btn-desc{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.04em;
+}
+
+.catalog-filter__form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.catalog-filter__form-group{
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    padding: 0;
+}
+
+.catalog-filter__form-group--column{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.catalog-filter__form-group-name{
+    display: flex;
+}
+
+.catalog-filter__form-group-input{
+    display: flex;
+}

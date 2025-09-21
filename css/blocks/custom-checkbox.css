@@ -1,0 +1,29 @@
+.custom-checkbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.custom-checbox__field{
+    width: 100%;
+}
+
+.custom-checkbox__label{
+    position: relative;
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.04em;
+    padding-left: 20px;
+    
+}
+
+.custom-checkbox__label::after{
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #AD8361;
+    left: 0;
+}
