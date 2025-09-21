@@ -1,5 +1,6 @@
 .catalog-filter{
     width: 330px;
+    height: 1069px;
 }
 
 .catalog-filter__heading{
@@ -37,21 +38,22 @@
 
 .catalog-filter__form-group{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     border: none;
     padding: 0;
+    
 }
 
-.catalog-filter__form-group--column{
+
+.catalog-filter__inner{
     display: flex;
+}
+
+.catalog-filter__inner--column{
     flex-direction: column;
     gap: 16px;
 }
 
 .catalog-filter__form-group-name{
-    display: flex;
-}
-
-.catalog-filter__form-group-input{
-    display: flex;
+    margin-bottom: 16px;
 }
