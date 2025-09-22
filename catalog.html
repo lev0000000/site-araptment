@@ -83,13 +83,15 @@
                   </div>
                 </div>
               </fieldset>
-              <div class="custom-checkbox">
+              <div class="catalog-filter__mini-group">
+                <div class="custom-checkbox custom-checkbox--xl">
                 <input class="custom-checkbox__field visually-hidden" type="checkbox" id="booking" name="booking">
                 <label class="custom-checkbox__label" for="booking">Скрыть забронированные</label>
               </div>
               <div class="custom-input">
-                <input class="custom-input__field" type="text" id="numberroom">
+                <input class="custom-input__field" type="text" id="numberroom" placeholder="Введите имя">
                 <label class="custom-input__label" for="numberroom">Номер квартиры</label>
+              </div>
               </div>
               <fieldset class="catalog-filter__form-group">
                 <legend class="catalog-filter__form-group-name">Количество спален</legend>
@@ -119,7 +121,7 @@
               </fieldset>
               <fieldset class="catalog-filter__form-group">
                 <legend class="catalog-filter__form-group-name">Тип</legend>
-                <div class="catalog-filter__inner">
+                <div class="catalog-filter__inner catalog-filter__inner--grid">
                   <div class="custom-radio">
                     <input class="custom-radio__field visually-hidden" type="radio" name="flat" id="flat">
                     <label for="flat" class="custom-radio__label">Квартира</label>
@@ -128,7 +130,7 @@
                     <input class="custom-radio__field visually-hidden" type="radio" name="penthouse" id="penthouse">
                     <label for="penthouse" class="custom-radio__label">Пентхаус</label>
                   </div>
-                  <div class="custom-radio">
+                  <div class="custom-radio custom-radio--xl">
                     <input class="custom-radio__field visually-hidden" type="radio" name="villa" id="villa">
                     <label for="villa" class="custom-radio__label">Вилла</label>
                   </div>
@@ -206,7 +208,7 @@
               </fieldset>
               <fieldset class="catalog-filter__form-group ">
                 <legend class="catalog-filter__form-group-name">Балконы</legend>
-                <div class="catalog-filter__innner">
+                <div class="catalog-filter__inner catalog-filter__inner--column">
                   <div class="custom-checkbox">
                     <input class="custom-checkbox__field visually-hidden" type="checkbox" id="loggia" name="loggia">
                     <label class="custom-checkbox__label" for="loggia">Лоджия</label>
@@ -235,9 +237,9 @@
                   </div>
                 </div>
               </fieldset>
-              <fieldset class="catalog-filter__form-group catalog-filter__form-group--column">
+              <fieldset class="catalog-filter__form-group">
                 <legend class="catalog-filter__form-group-name">Ориентация по сторонам света</legend>
-                <div class="catalog-filter__inner">
+                <div class="catalog-filter__inner catalog-filter__inner--column-xl">
                   <div class="custom-checkbox">
                     <input class="custom-checkbox__field visually-hidden" type="checkbox" name="northeast"
                       id="northeast">
@@ -272,7 +274,7 @@
                   </div>
                 </div>
               </fieldset>
-              <button class="catalog-filter__form-btn btn">
+              <button class="catalog-filter__form-btn button button--xl">
                 Применить фильтр
               </button>
             </form>
