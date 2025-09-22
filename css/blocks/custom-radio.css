@@ -17,6 +17,11 @@
     border-top: none;
 }
 
+.custom-radio__label--border{
+    border-right: 1px solid rgba(173, 131, 97, 1);
+}
+
+
 .custom-radio__field{
 }
 

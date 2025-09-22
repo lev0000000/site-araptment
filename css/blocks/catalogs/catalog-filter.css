@@ -34,7 +34,7 @@
     display: flex;
     width: 330px;
     flex-direction: column;
-    gap: 24px;
+    gap: 23px;
     padding: 0;
 }
 
@@ -58,8 +58,15 @@
 .catalog-filter__inner--column{
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 16px;
+    row-gap: 16px;
     max-height: 100px;
+}
+
+.catalog-filter__inner--column-min{
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 19px;
+    max-height: 60px;
 }
 
 .catalog-filter__inner--grid{
@@ -73,7 +80,7 @@
 .catalog-filter__inner--column-xl{
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 16px;
+    row-gap: 16px;
     height: 130px;
 }
 
@@ -82,5 +89,5 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: -0.04em;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
 }
