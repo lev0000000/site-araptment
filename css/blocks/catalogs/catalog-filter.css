@@ -46,13 +46,18 @@
     margin: 0;
 }
 
+.catalog-filter__form-group--grid .catalog-filter__form-group-name {
+    margin-bottom: 17px;
+}
+
 .catalog-filter__mini-group{
     display: flex;
     flex-direction: column;
-    gap: 38px;
+    gap: 39px;
 }
 .catalog-filter__inner{
     display: flex;
+    max-width: 330px;
 }
 
 .catalog-filter__inner--column{
@@ -73,15 +78,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    
 }
-
 
 
 .catalog-filter__inner--column-xl{
     flex-direction: column;
     flex-wrap: wrap;
-    row-gap: 16px;
-    height: 130px;
+    row-gap: 17px;
+    max-height: 110px;
 }
 
 .catalog-filter__form-group-name{
@@ -91,3 +96,5 @@
     letter-spacing: -0.04em;
     margin-bottom: 15px;
 }
+
+
