@@ -1,19 +1,21 @@
 .catalog-card {
 	position: relative;
 	background-color: #FFFFFF;
+	height: 100%;
 }
 
 .catalog-card__top {
 	row-gap: 16px;
 	display: flex;
 	flex-direction: column;
-	padding: 20px;
+	padding: 20px 20px 0;
 }
 
 .catalog-card__footer {
 	display: flex;
 	justify-content: space-between;
-	padding: 20px 20px 26px;
+	height: 81px;
+	padding: 20px 20px 25px;
 	border-top: 1px solid rgba(9, 9, 9, 0.1);
 }
 
@@ -23,6 +25,7 @@
 	font-weight: 300;
 	line-height: 17px;
 	letter-spacing: -0.04em;
+	margin-bottom: 25px;
 }
 
 .catalog-card__pic {
@@ -35,7 +38,7 @@
 	flex-wrap: wrap;
 	gap: 40px;
 	margin: 0 auto;
-	padding: 0;
+	padding: 40px 0 20px;
 	list-style: none;
 }
 

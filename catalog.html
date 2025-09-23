@@ -14,7 +14,7 @@
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
-        <button class="header__btn btn" type="button" aria-label="Бургерное меню">
+        <button class="header__btn button" type="button" aria-label="Бургерное меню">
           <svg width="44" height="10">
             <use xlink:href="images/sprite.svg#icon-burger"></use>
           </svg>
@@ -51,8 +51,6 @@
     <section class="catalog">
       <div class="container">
         <h1 class="visually-hidden">Подбор квартиры по параметрам</h1>
-        <div class="catalog__wrapper">
-        </div>
         <div class="catalog__inner">
           <!-- Форма фильтрации -->
           <aside class="catalog-filter">
@@ -90,7 +88,14 @@
               </div>
               <div class="custom-input">
                 <input class="custom-input__field" type="text" id="numberroom" placeholder="Введите имя">
-                <label class="custom-input__label" for="numberroom">Номер квартиры</label>
+                <label class="custom-input__label" for="numberroom">
+                  <svg class="custom-input__label-icon" width="14" height="16">
+                      <use xlink:href="images/sprite.svg#icon-key"></use>
+                    </svg>
+                  <span class="custom-input__label-text">
+                    Введите номер
+                  </span>
+                </label>
               </div>
               </div>
               <fieldset class="catalog-filter__form-group">

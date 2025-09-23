@@ -1,8 +1,8 @@
 .header{
     position: relative;
     background-color: #EFEDE7;
-    margin-bottom: 20px;
-    padding: 28px;
+    margin-bottom:20px;
+    padding: 32px;
 }
 
 .header__wrapper{
@@ -27,7 +27,7 @@
 
 .header__selector-item{
     background-color: rgba(243, 243, 243, 1);
-    padding: 30px;
+    padding: 29px 30px;
     width: 50%;
     display: flex;
     gap:4px;
@@ -37,10 +37,12 @@
 .header__selector-item--active{
     background-color: #fff;
     color:#AC8361;
+    padding: 29px 41px;
 }
 
+
 .header__selector-item-icon{
-    padding: 9px 6px;
+    padding: 6px;
     color:#AC8361;
 }
 .header__selector-item-text{
@@ -53,7 +55,7 @@
 
 .header__aside{
     display: flex;
-    gap: 36px;
+    gap: 27px;
 }
 
 .header__aside-btn{
@@ -83,4 +85,10 @@
     left: 9px;
     top: 4px;
     
+}
+
+.header__aside-contact{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
 }
