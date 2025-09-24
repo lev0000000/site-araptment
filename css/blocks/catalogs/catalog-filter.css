@@ -1,12 +1,13 @@
 .catalog-filter{
-    
+    position: relative;
 }
 
 .catalog-filter__heading{
     display: flex;
     width: 100%;
     gap: 116px;
-    margin-bottom: 27px;
+    margin-bottom: 4px;
+    
 }
 
 .catalog-filter__heading-list-numb{
@@ -81,7 +82,6 @@
     
 }
 
-
 .catalog-filter__inner--column-xl{
     flex-direction: column;
     flex-wrap: wrap;
@@ -95,6 +95,12 @@
     line-height: 14px;
     letter-spacing: -0.04em;
     margin-bottom: 15px;
+}
+
+.catalog-filter__form-btn-aside{
+    position: absolute;
+    right: -56%;
+    top: 31.888%;
 }
 
 

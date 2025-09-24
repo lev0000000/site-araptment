@@ -8,7 +8,10 @@
     background-color: rgba(239, 237, 231, 1);
 }
 
-
+.custom-radio__field:checked + .custom-radio__label{
+    background-color: #AD8361;
+    color: #fff;
+}
 
 .custom-radio:last-child>.custom-radio__label{
     border-right: 1px solid rgba(173, 131, 97, 1);

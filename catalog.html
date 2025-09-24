@@ -54,16 +54,16 @@
         <div class="catalog__inner">
           <!-- Форма фильтрации -->
           <aside class="catalog-filter">
-            <div class="catalog-filter__heading">
-              <span class="catalog-filter__heading-list-numb">Показано 6 из 9</span>
-              <button type="reset" class="catalog-filter__heading-btn">
-                <span class="catalog-filter__heading-btn-desc">СБРОСИТЬ</span>
-                <svg class="catalog-filter__heading-btn-icon" width="12" height="12">
-                  <use xlink:href="images/sprite.svg#icon-exit"></use>
-                </svg>
-              </button>
-            </div>
             <form action="#" class="catalog-filter__form" method="POST">
+              <div class="catalog-filter__heading">
+                <span class="catalog-filter__heading-list-numb">Показано 6 из 9</span>
+                <button type="reset" class="catalog-filter__heading-btn">
+                  <span class="catalog-filter__heading-btn-desc">СБРОСИТЬ</span>
+                  <svg class="catalog-filter__heading-btn-icon" width="12" height="12">
+                    <use xlink:href="images/sprite.svg#icon-exit"></use>
+                  </svg>
+                </button>
+              </div>
               <fieldset class="catalog-filter__form-group">
                 <legend class="catalog-filter__form-group-name">Валюта</legend>
                 <div class="catalog-filter__inner">
@@ -83,20 +83,20 @@
               </fieldset>
               <div class="catalog-filter__mini-group">
                 <div class="custom-checkbox custom-checkbox--xl">
-                <input class="custom-checkbox__field visually-hidden" type="checkbox" id="booking" name="booking">
-                <label class="custom-checkbox__label" for="booking">Скрыть забронированные</label>
-              </div>
-              <div class="custom-input">
-                <input class="custom-input__field" type="text" id="numberroom" placeholder="Введите имя" value="14">
-                <label class="custom-input__label" for="numberroom">
-                  <svg class="custom-input__label-icon" width="14" height="16">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="booking" name="booking">
+                  <label class="custom-checkbox__label" for="booking">Скрыть забронированные</label>
+                </div>
+                <div class="custom-input">
+                  <input class="custom-input__field" type="text" id="numberroom" placeholder="Введите имя" value="14">
+                  <label class="custom-input__label" for="numberroom">
+                    <svg class="custom-input__label-icon" width="14" height="16">
                       <use xlink:href="images/sprite.svg#icon-key"></use>
                     </svg>
-                  <span class="custom-input__label-text">
-                    Введите номер
-                  </span>
-                </label>
-              </div>
+                    <span class="custom-input__label-text">
+                      Введите номер
+                    </span>
+                  </label>
+                </div>
               </div>
               <fieldset class="catalog-filter__form-group">
                 <legend class="catalog-filter__form-group-name">Количество спален</legend>
@@ -110,8 +110,7 @@
                     <label for="number_two" class="custom-radio__label">2</label>
                   </div>
                   <div class="custom-radio custom-radio--active">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="number"
-                      id="number_three">
+                    <input class="custom-radio__field visually-hidden" type="radio" name="number" id="number_three">
                     <label for="number_three" class="custom-radio__label">3</label>
                   </div>
                   <div class="custom-radio">
@@ -152,7 +151,7 @@
                     <input class="custom-radio__field visually-hidden" type="radio" name="size" id="m">
                     <label for="m" class="custom-radio__label">M</label>
                   </div>
-                  <div class="custom-radio .custom-radio--active">
+                  <div class="custom-radio custom-radio--active">
                     <input class="custom-radio__field visually-hidden" type="radio" name="size" id="l">
                     <label for="l" class="custom-radio__label">L</label>
                   </div>
@@ -234,7 +233,7 @@
                 <div class="catalog-filter__inner">
                   <div class="custom-checkbox">
                     <input class="custom-checkbox__field visually-hidden" type="checkbox" id="linear" name="linear">
-                    <label class="custom-checkbox__label" for="Linear">Линейная</label>
+                    <label class="custom-checkbox__label" for="linear">Линейная</label>
                   </div>
                   <div class="custom-checkbox">
                     <input class="custom-checkbox__field visually-hidden" type="checkbox" id="plowing" name="plowing">
@@ -274,13 +273,17 @@
                     <label for="south" class="custom-checkbox__label">Юг</label>
                   </div>
                   <div class="custom-checkbox">
-                    <input class="custom-checkbox__field visually-hidden" type="checkbox" name="west" id="west" disabled>
+                    <input class="custom-checkbox__field visually-hidden" type="checkbox" name="west" id="west"
+                      disabled>
                     <label for="west" class="custom-checkbox__label">Запад</label>
                   </div>
                 </div>
               </fieldset>
-              <button class="catalog-filter__form-btn button button--xl">
+              <button class="catalog-filter__form-btn button button--xl" type="submit" id="sender">
                 Применить фильтр
+              </button>
+              <button class="catalog-filter__form-btn-aside button button--square" type="submit" id="sender_run">
+                Показать 4 квартиры
               </button>
             </form>
           </aside>
@@ -476,6 +479,7 @@
 
             <li class="catalog-list__item">
               <div class="catalog-card">
+                
                 <a class="catalog-card__inner" href="#" aria-label="Переход на страницу квартиры">
                   <div class="catalog-card__top">
                     <p class="catalog-card__title">Квартира №31</p>
