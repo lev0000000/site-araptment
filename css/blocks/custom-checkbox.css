@@ -2,14 +2,10 @@
     display: flex;
     width: 50%;
     justify-content: center;
+    user-select: none;
 }
-
 
 .custom-checkbox--xl{
-    width: 100%;
-}
-
-.custom-checbox__field{
     width: 100%;
 }
 
@@ -21,7 +17,22 @@
     line-height: 14px;
     letter-spacing: -0.04em;
     padding-left: 25px;
-    
+    cursor: pointer;   
+}
+
+.custom-checkbox__label:hover{
+    color: rgba(173, 131, 97, 1);
+}
+
+.custom-checkbox__field:focus-visible + .custom-checkbox__label{
+    color: rgba(173, 131, 97, 1);
+}
+
+.custom-checkbox__field:disabled + .custom-checkbox__label,
+.custom-checkbox__field:disabled +::after{
+    pointer-events: none;
+    color:rgba(9, 9, 9, 0.5);
+    border-color: rgba(173, 131, 97, 0.5);
 }
 
 .custom-checkbox__label::after{
@@ -32,3 +43,19 @@
     border: 1px solid #AD8361;
     left: 0;
 }
+
+.custom-checkbox__label::before{
+    content: "";
+    position: absolute;
+    display: none;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(173, 131, 97, 1);
+    left: 4px;
+    top: 4px;
+}
+
+.custom-checkbox__field:checked + ::before{
+    display: block;
+}
+

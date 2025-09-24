@@ -4,6 +4,12 @@
     
 }
 
+.custom-radio__field:focus-visible + .custom-radio__label {
+    background-color: rgba(239, 237, 231, 1);
+}
+
+
+
 .custom-radio:last-child>.custom-radio__label{
     border-right: 1px solid rgba(173, 131, 97, 1);
 }
@@ -19,10 +25,6 @@
 
 .custom-radio__label--border{
     border-right: 1px solid rgba(173, 131, 97, 1);
-}
-
-
-.custom-radio__field{
 }
 
 .custom-radio__label{
@@ -42,3 +44,15 @@
 }
 
 
+.custom-radio__label:hover{
+    color: rgba(9, 9, 9, 1);
+}
+
+
+
+.custom-radio__field:disabled + .custom-radio__label{
+    border: 1px solid rgba(173, 131, 97, 0.5);
+    background-color: rgba(243, 243, 243, 0.5);
+    color: rgba(173, 131, 97, 0.5);
+
+}

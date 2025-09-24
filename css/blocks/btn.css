@@ -15,3 +15,20 @@ button{
     line-height: 14px;
     letter-spacing: -0.04em;
 }
+
+.button--xl:hover{
+    background-color:rgba(173, 131, 97, 1);
+    color: #fff;
+}
+
+.button--xl:focus-visible{
+    outline: none;
+    background-color:rgba(173, 131, 97, 1);
+    color: #fff;
+}
+
+.button--xl:disabled{
+    border-color: rgba(173, 131, 97, 0.5);
+    color: rgba(173, 131, 97, 0.5);
+    background-color: rgba(243, 243, 243, 0.5);
+}

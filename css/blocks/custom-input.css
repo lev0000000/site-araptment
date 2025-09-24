@@ -8,6 +8,31 @@
     background: transparent;
     padding-top: 18px;
     width: 100%;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.04em;
+}
+
+.custom-input__field:focus-visible{
+    outline: none;
+    border-bottom: 1px solid rgba(173, 131, 97, 1);
+}
+
+.custom-input__field:disabled::placeholder{
+    border-color: rgba(9, 9, 9, 0.3);
+    color: rgba(9, 9, 9, 0.1);
+}
+
+.custom-input__field:disabled + .custom-input__label> .custom-input__label-icon{
+    color:rgba(173, 131, 97, 0.5);
+}
+
+.custom-input__field:hover{
+    outline-offset: none;
+    border-bottom: 1px solid rgba(173, 131, 97, 1);
 }
 
 .custom-input__field::placeholder{
@@ -16,6 +41,7 @@
     line-height: 14px;
     letter-spacing: -0.04em;
 }
+
 
 .custom-input__label-text{
     position: absolute;

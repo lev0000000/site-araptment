@@ -67,16 +67,16 @@
               <fieldset class="catalog-filter__form-group">
                 <legend class="catalog-filter__form-group-name">Валюта</legend>
                 <div class="catalog-filter__inner">
-                  <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="RUB" id="RUB">
+                  <div class="custom-radio custom-radio--active">
+                    <input class="custom-radio__field visually-hidden" type="radio" name="currency" id="RUB">
                     <label for="RUB" class="custom-radio__label">₽</label>
                   </div>
                   <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="DOLLAR" id="DOLLAR">
+                    <input class="custom-radio__field visually-hidden" type="radio" name="currency" id="DOLLAR">
                     <label for="DOLLAR" class="custom-radio__label">$</label>
                   </div>
                   <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="EURO" id="EURO">
+                    <input class="custom-radio__field visually-hidden" type="radio" name="currency" id="EURO">
                     <label for="EURO" class="custom-radio__label">€</label>
                   </div>
                 </div>
@@ -87,7 +87,7 @@
                 <label class="custom-checkbox__label" for="booking">Скрыть забронированные</label>
               </div>
               <div class="custom-input">
-                <input class="custom-input__field" type="text" id="numberroom" placeholder="Введите имя">
+                <input class="custom-input__field" type="text" id="numberroom" placeholder="Введите имя" value="14">
                 <label class="custom-input__label" for="numberroom">
                   <svg class="custom-input__label-icon" width="14" height="16">
                       <use xlink:href="images/sprite.svg#icon-key"></use>
@@ -102,24 +102,24 @@
                 <legend class="catalog-filter__form-group-name">Количество спален</legend>
                 <div class="catalog-filter__inner">
                   <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="number_one" id="number_one">
+                    <input class="custom-radio__field visually-hidden" type="radio" name="number" id="number_one">
                     <label for="number_one" class="custom-radio__label">1</label>
                   </div>
                   <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="number_two" id="number_two">
+                    <input class="custom-radio__field visually-hidden" type="radio" name="number" id="number_two">
                     <label for="number_two" class="custom-radio__label">2</label>
                   </div>
-                  <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="number_three "
+                  <div class="custom-radio custom-radio--active">
+                    <input class="custom-radio__field visually-hidden" type="radio" name="number"
                       id="number_three">
                     <label for="number_three" class="custom-radio__label">3</label>
                   </div>
                   <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="number_four" id="number_four">
+                    <input class="custom-radio__field visually-hidden" type="radio" name="number" id="number_four">
                     <label for="number_four" class="custom-radio__label">4</label>
                   </div>
                   <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="number_five" id="number_five">
+                    <input class="custom-radio__field visually-hidden" type="radio" name="number" id="number_five">
                     <label for="number_five" class="custom-radio__label">5</label>
                   </div>
                 </div>
@@ -128,15 +128,15 @@
                 <legend class="catalog-filter__form-group-name">Тип</legend>
                 <div class="catalog-filter__inner catalog-filter__inner--grid">
                   <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="flat" id="flat">
+                    <input class="custom-radio__field visually-hidden" type="radio" name="types" id="flat">
                     <label for="flat" class="custom-radio__label">Квартира</label>
                   </div>
                   <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="penthouse" id="penthouse">
+                    <input class="custom-radio__field visually-hidden" type="radio" name="types" id="penthouse">
                     <label for="penthouse" class="custom-radio__label custom-radio__label--border">Пентхаус</label>
                   </div>
                   <div class="custom-radio custom-radio--xl">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="villa" id="villa">
+                    <input class="custom-radio__field visually-hidden" type="radio" name="types" id="villa">
                     <label for="villa" class="custom-radio__label">Вилла</label>
                   </div>
                 </div>
@@ -145,20 +145,20 @@
                 <legend class="catalog-filter__form-group-name">Размер</legend>
                 <div class="catalog-filter__inner">
                   <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="s" id="s">
-                    <label for="s" class="custom-radio__label">s</label>
+                    <input class="custom-radio__field visually-hidden" type="radio" name="size" id="s">
+                    <label for="s" class="custom-radio__label">S</label>
+                  </div>
+                  <div class="custom-radio custom-radio--active ">
+                    <input class="custom-radio__field visually-hidden" type="radio" name="size" id="m">
+                    <label for="m" class="custom-radio__label">M</label>
+                  </div>
+                  <div class="custom-radio .custom-radio--active">
+                    <input class="custom-radio__field visually-hidden" type="radio" name="size" id="l">
+                    <label for="l" class="custom-radio__label">L</label>
                   </div>
                   <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="m" id="m">
-                    <label for="m" class="custom-radio__label">m</label>
-                  </div>
-                  <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="l" id="l">
-                    <label for="l" class="custom-radio__label">l</label>
-                  </div>
-                  <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="xl" id="xl">
-                    <label for="xl" class="custom-radio__label">xl</label>
+                    <input class="custom-radio__field visually-hidden" type="radio" name="size" id="xl">
+                    <label for="xl" class="custom-radio__label">XL</label>
                   </div>
                 </div>
               </fieldset>
@@ -166,19 +166,19 @@
                 <legend class="catalog-filter__form-group-name">Этаж</legend>
                 <div class="catalog-filter__inner">
                   <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="floor_one" id="floor_one">
+                    <input class="custom-radio__field visually-hidden" type="radio" name="floor" id="floor_one">
                     <label for="floor_one" class="custom-radio__label">1</label>
                   </div>
                   <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="floor_two" id="floor_two">
+                    <input class="custom-radio__field visually-hidden" type="radio" name="floor" id="floor_two">
                     <label for="floor_two" class="custom-radio__label">2</label>
                   </div>
                   <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="floor_three" id="floor_three">
+                    <input class="custom-radio__field visually-hidden" type="radio" name="floor" id="floor_three">
                     <label for="floor_three" class="custom-radio__label">3</label>
                   </div>
                   <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="floor_four" id="floor_four">
+                    <input class="custom-radio__field visually-hidden" type="radio" name="floor" id="floor_four">
                     <label for="floor_four" class="custom-radio__label">4</label>
                   </div>
                 </div>
@@ -201,7 +201,7 @@
                   </div>
                   <div class="custom-checkbox">
                     <input class="custom-checkbox__field visually-hidden" type="checkbox" id="two-floor"
-                      name="two-floor">
+                      name="two-floor" disabled>
                     <label class="custom-checkbox__label" for="two-floor">Двухэтажная</label>
                   </div>
                   <div class="custom-checkbox">
@@ -247,7 +247,7 @@
                 <div class="catalog-filter__inner catalog-filter__inner--column-xl">
                   <div class="custom-checkbox">
                     <input class="custom-checkbox__field visually-hidden" type="checkbox" name="northeast"
-                      id="northeast">
+                      id="northeast" disabled>
                     <label for="northeast" class="custom-checkbox__label">Северо-восток</label>
                   </div>
                   <div class="custom-checkbox">
@@ -274,7 +274,7 @@
                     <label for="south" class="custom-checkbox__label">Юг</label>
                   </div>
                   <div class="custom-checkbox">
-                    <input class="custom-checkbox__field visually-hidden" type="checkbox" name="west" id="west">
+                    <input class="custom-checkbox__field visually-hidden" type="checkbox" name="west" id="west" disabled>
                     <label for="west" class="custom-checkbox__label">Запад</label>
                   </div>
                 </div>
