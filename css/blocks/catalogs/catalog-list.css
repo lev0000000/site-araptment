@@ -1,10 +1,10 @@
 .catalog-list {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows:  repeat(2,47.777%);
+	grid-template-rows:  repeat(2,48.444%);
 	gap: 16px;
-	width: 75%;
-	margin: 18px 0 0;
+	width: 100%;
+	padding: 20px 0 0;
 	padding: 0;
 	list-style: none;
 }

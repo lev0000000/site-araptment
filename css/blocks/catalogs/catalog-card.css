@@ -1,12 +1,11 @@
 .catalog-card {
 	position: relative;
 	background-color: #FFFFFF;
-	height: 100%;
-	
 }
 
-.catalog-card:hover>.catalog-card__inner::after,
-.catalog-card:hover>.catalog-card__inner::before{
+
+.catalog-card__inner:hover::after,
+.catalog-card__inner:hover::before{
 	visibility: visible;
 }
 
@@ -149,6 +148,16 @@
 }
 
 
+.catalog-card__btn-like:hover>.catalog-card__like-icon,
 .catalog-card__btn-like:active>.catalog-card__like-icon{
 	color: rgba(172, 131, 97, 1);
+}
+
+.catalog-card__btn-like:focus-visible{
+	outline: none;
+	
+}
+
+.catalog-card__btn-like:focus-visible>.catalog-card__like-icon{
+	border: 1px solid #AC8361
 }

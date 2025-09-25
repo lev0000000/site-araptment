@@ -1,7 +1,6 @@
 .custom-radio{
     width: 100%;
-    display: flex;
-    
+    display: grid;
 }
 
 .custom-radio__field:focus-visible + .custom-radio__label {
@@ -33,7 +32,7 @@
 .custom-radio__label{
     display: flex;
     width: 100%;
-    background-color: #fff;
+    background-color: transparent;
     justify-content: center;
     border-bottom: 1px solid rgba(173, 131, 97, 1);
     border-top: 1px solid rgba(173, 131, 97, 1);

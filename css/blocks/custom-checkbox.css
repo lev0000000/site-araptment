@@ -1,6 +1,6 @@
 .custom-checkbox{
     display: flex;
-    width: 50%;
+    width: 100%;
     justify-content: center;
     user-select: none;
 }
@@ -57,5 +57,9 @@
 
 .custom-checkbox__field:checked + ::before{
     display: block;
+}
+
+.custom-checkbox__label:hover{
+    color:#AD8361;
 }
 

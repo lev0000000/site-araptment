@@ -20,13 +20,13 @@
           </svg>
         </button>
         <div class="header__selector">
-          <div class="header__selector-item">
+          <button class="header__selector-item button button--selector">
             <svg class="header__selector-item-icon" width="32" height="32">
               <use xlink:href="images/sprite.svg#icon-visual"></use>
             </svg>
             <span class="header__selector-item-text">Визуальный выбор</span>
-          </div>
-          <div class="header__selector-item header__selector-item--active">
+          </button>
+          <div class="header__selector-item button button--selector button--active">
             <svg class="header__selector-item-icon" width="32" height="32">
               <use xlink:href="images/sprite.svg#icon-setting"></use>
             </svg>
@@ -35,12 +35,12 @@
         </div>
         <div class="header__aside">
           <button class="header__aside-btn">En</button>
-          <a href="#" class="header__aside-favorite">
+          <button href="#" class="header__aside-favorite button">
             <svg class="header__aside-favorite-icon" width="22" height="20">
               <use xlink:href="images/sprite.svg#icon-heart"></use>
             </svg>
             <span class="header__aside-favorite-numb">1</span>
-          </a>
+          </button>
           <a href="tel:84953248010" class="header__aside-contact">+7 495 324 80 10</a>
         </div>
       </div>
@@ -53,8 +53,7 @@
         <h1 class="visually-hidden">Подбор квартиры по параметрам</h1>
         <div class="catalog__inner">
           <!-- Форма фильтрации -->
-          <aside class="catalog-filter">
-            <form action="#" class="catalog-filter__form" method="POST">
+            <form action="#" class="catalog-filter" method="POST">
               <div class="catalog-filter__heading">
                 <span class="catalog-filter__heading-list-numb">Показано 6 из 9</span>
                 <button type="reset" class="catalog-filter__heading-btn">
@@ -100,7 +99,7 @@
               </div>
               <fieldset class="catalog-filter__form-group">
                 <legend class="catalog-filter__form-group-name">Количество спален</legend>
-                <div class="catalog-filter__inner">
+                <div class="catalog-filter__inner catalog-filter__inner--five-size">
                   <div class="custom-radio">
                     <input class="custom-radio__field visually-hidden" type="radio" name="number" id="number_one">
                     <label for="number_one" class="custom-radio__label">1</label>
@@ -123,9 +122,9 @@
                   </div>
                 </div>
               </fieldset>
-              <fieldset class="catalog-filter__form-group catalog-filter__form-group--grid">
+              <fieldset class="catalog-filter__form-group">
                 <legend class="catalog-filter__form-group-name">Тип</legend>
-                <div class="catalog-filter__inner catalog-filter__inner--grid">
+                <div class="catalog-filter__inner catalog-filter__inner--grid-flat">
                   <div class="custom-radio">
                     <input class="custom-radio__field visually-hidden" type="radio" name="types" id="flat">
                     <label for="flat" class="custom-radio__label">Квартира</label>
@@ -142,7 +141,7 @@
               </fieldset>
               <fieldset class="catalog-filter__form-group">
                 <legend class="catalog-filter__form-group-name">Размер</legend>
-                <div class="catalog-filter__inner">
+                <div class="catalog-filter__inner catalog-filter__inner--foure-size">
                   <div class="custom-radio">
                     <input class="custom-radio__field visually-hidden" type="radio" name="size" id="s">
                     <label for="s" class="custom-radio__label">S</label>
@@ -163,7 +162,7 @@
               </fieldset>
               <fieldset class="catalog-filter__form-group">
                 <legend class="catalog-filter__form-group-name">Этаж</legend>
-                <div class="catalog-filter__inner">
+                <div class="catalog-filter__inner catalog-filter__inner--foure-size">
                   <div class="custom-radio">
                     <input class="custom-radio__field visually-hidden" type="radio" name="floor" id="floor_one">
                     <label for="floor_one" class="custom-radio__label">1</label>
@@ -230,7 +229,7 @@
               </fieldset>
               <fieldset class="catalog-filter__form-group">
                 <legend class="catalog-filter__form-group-name">Планировка</legend>
-                <div class="catalog-filter__inner">
+                <div class="catalog-filter__inner catalog-filter__inner--column-maxmin">
                   <div class="custom-checkbox">
                     <input class="custom-checkbox__field visually-hidden" type="checkbox" id="linear" name="linear">
                     <label class="custom-checkbox__label" for="linear">Линейная</label>
@@ -279,14 +278,13 @@
                   </div>
                 </div>
               </fieldset>
-              <button class="catalog-filter__form-btn button button--xl" type="submit" id="sender">
+              <button class="button button--xl" type="submit" id="sender">
                 Применить фильтр
               </button>
-              <button class="catalog-filter__form-btn-aside button button--square" type="submit" id="sender_run">
+              <button class="catalog-filter-secondary-btn catalog-filter-secondary-btn--active button button--square" type="submit" id="sender_run">
                 Показать 4 квартиры
               </button>
             </form>
-          </aside>
           <!-- Список с карточками -->
           <ul class="catalog-list">
             <li class="catalog-list__item">
