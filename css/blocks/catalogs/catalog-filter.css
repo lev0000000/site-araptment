@@ -39,6 +39,7 @@
 }
 
 .catalog-filter__form-group{
+    position: relative;
     display: flex;
     flex-direction: column;
     border: none;
@@ -116,14 +117,14 @@
 }
 
 
-.catalog-filter-secondary-btn{
+.catalog-filter-form-btn-second{
     position: absolute;
     right: -56%;
-    top: 31.888%;
+    top: -5px;
     display: none;
 }
 
-.catalog-filter-secondary-btn--active{
+.catalog-filter-form-btn-second--active{
     display: block;
 }
 

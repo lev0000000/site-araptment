@@ -9,6 +9,15 @@
 	visibility: visible;
 }
 
+.catalog-card__inner:focus-visible{
+	outline: none;
+}
+
+.catalog-card__inner:focus-visible:after,
+.catalog-card__inner:focus-visible::before{
+	visibility: visible;
+}
+
 .catalog-card__top {
 	row-gap: 16px;
 	display: flex;
@@ -158,6 +167,10 @@
 	
 }
 
+.catalog-card__btn-like:focus-visible{
+	outline: none;
+}
+
 .catalog-card__btn-like:focus-visible>.catalog-card__like-icon{
-	border: 1px solid #AC8361
+	color: rgba(172, 131, 97, 1);
 }
