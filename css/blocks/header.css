@@ -33,13 +33,6 @@
     align-items: center;
 }
 
-.header__selector-item--active{
-    background-color: #fff;
-    color:#AC8361;
-    padding: 29px 41px;
-}
-
-
 .header__selector-item-icon{
     padding: 6px;
     color:#AC8361;
@@ -64,17 +57,14 @@
 .header__aside-favorite{
     position: relative;
     display: flex;
-    
-
-
 }
+
 
 .header__aside-favorite-icon{
     color:#AC8361;
-
-    
-    
+ 
 }
+
 .header__aside-favorite-numb{
     position: absolute;
     color: #fff;

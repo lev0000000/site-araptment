@@ -14,19 +14,19 @@
   <header class="header">
     <div class="container">
       <div class="header__wrapper">
-        <button class="header__btn button" type="button" aria-label="Бургерное меню">
+        <button class="header__btn" type="button" aria-label="Бургерное меню">
           <svg width="44" height="10">
             <use xlink:href="images/sprite.svg#icon-burger"></use>
           </svg>
         </button>
         <div class="header__selector">
-          <button class="header__selector-item button button--selector">
+          <button class="header__selector-item button">
             <svg class="header__selector-item-icon" width="32" height="32">
               <use xlink:href="images/sprite.svg#icon-visual"></use>
             </svg>
             <span class="header__selector-item-text">Визуальный выбор</span>
           </button>
-          <div class="header__selector-item button button--selector button--active">
+          <div class="header__selector-item button button--active">
             <svg class="header__selector-item-icon" width="32" height="32">
               <use xlink:href="images/sprite.svg#icon-setting"></use>
             </svg>
@@ -35,7 +35,7 @@
         </div>
         <div class="header__aside">
           <button class="header__aside-btn">En</button>
-          <button href="#" class="header__aside-favorite button">
+          <button href="#" class="header__aside-favorite">
             <svg class="header__aside-favorite-icon" width="22" height="20">
               <use xlink:href="images/sprite.svg#icon-heart"></use>
             </svg>
@@ -53,236 +53,233 @@
         <h1 class="visually-hidden">Подбор квартиры по параметрам</h1>
         <div class="catalog__inner">
           <!-- Форма фильтрации -->
-            <form action="#" class="catalog-filter" method="POST">
-              <div class="catalog-filter__heading">
-                <span class="catalog-filter__heading-list-numb">Показано 6 из 9</span>
-                <button type="reset" class="catalog-filter__heading-btn">
-                  <span class="catalog-filter__heading-btn-desc">СБРОСИТЬ</span>
-                  <svg class="catalog-filter__heading-btn-icon" width="12" height="12">
-                    <use xlink:href="images/sprite.svg#icon-exit"></use>
-                  </svg>
-                </button>
+          <form action="#" class="catalog-filter" method="POST">
+            <div class="catalog-filter__heading">
+              <span class="catalog-filter__heading-list-numb">Показано 6 из 9</span>
+              <button type="reset" class="catalog-filter__heading-btn">
+                <span class="catalog-filter__heading-btn-desc">СБРОСИТЬ</span>
+                <svg class="catalog-filter__heading-btn-icon" width="12" height="12">
+                  <use xlink:href="images/sprite.svg#icon-exit"></use>
+                </svg>
+              </button>
+            </div>
+            <fieldset class="catalog-filter__form-group">
+              <legend class="catalog-filter__form-group-name">Валюта</legend>
+              <div class="catalog-filter__inner">
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="currency" id="RUB">
+                  <label for="RUB" class="custom-radio__label">₽</label>
+                </div>
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="currency" id="DOLLAR">
+                  <label for="DOLLAR" class="custom-radio__label">$</label>
+                </div>
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="currency" id="EURO">
+                  <label for="EURO" class="custom-radio__label">€</label>
+                </div>
               </div>
-              <fieldset class="catalog-filter__form-group">
-                <legend class="catalog-filter__form-group-name">Валюта</legend>
-                <div class="catalog-filter__inner">
-                  <div class="custom-radio custom-radio--active">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="currency" id="RUB">
-                    <label for="RUB" class="custom-radio__label">₽</label>
-                  </div>
-                  <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="currency" id="DOLLAR">
-                    <label for="DOLLAR" class="custom-radio__label">$</label>
-                  </div>
-                  <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="currency" id="EURO">
-                    <label for="EURO" class="custom-radio__label">€</label>
-                  </div>
+            </fieldset>
+            <div class="custom-checkbox custom-checkbox--xl">
+              <input class="custom-checkbox__field visually-hidden" type="checkbox" id="booking" name="booking">
+              <label class="custom-checkbox__label" for="booking">Скрыть забронированные</label>
+            </div>
+            <div class="custom-input">
+              <input class="custom-input__field" type="text" id="numberroom" placeholder="Введите имя" value="14">
+              <label class="custom-input__label" for="numberroom">
+                <svg class="custom-input__label-icon" width="14" height="16">
+                  <use xlink:href="images/sprite.svg#icon-key"></use>
+                </svg>
+                <span class="custom-input__label-text">
+                  Введите номер
+                </span>
+              </label>
+            </div>
+            <fieldset class="catalog-filter__form-group">
+              <legend class="catalog-filter__form-group-name">Количество спален</legend>
+              <div class="catalog-filter__inner catalog-filter__inner--five-size">
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="number" id="number_one">
+                  <label for="number_one" class="custom-radio__label">1</label>
                 </div>
-              </fieldset>
-                <div class="custom-checkbox custom-checkbox--xl">
-                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="booking" name="booking">
-                  <label class="custom-checkbox__label" for="booking">Скрыть забронированные</label>
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="number" id="number_two">
+                  <label for="number_two" class="custom-radio__label">2</label>
                 </div>
-                <div class="custom-input">
-                  <input class="custom-input__field" type="text" id="numberroom" placeholder="Введите имя" value="14">
-                  <label class="custom-input__label" for="numberroom">
-                    <svg class="custom-input__label-icon" width="14" height="16">
-                      <use xlink:href="images/sprite.svg#icon-key"></use>
-                    </svg>
-                    <span class="custom-input__label-text">
-                      Введите номер
-                    </span>
-                  </label>
+                <div class="custom-radio custom-radio--active">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="number" id="number_three">
+                  <label for="number_three" class="custom-radio__label">3</label>
+                </div>
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="number" id="number_four">
+                  <label for="number_four" class="custom-radio__label">4</label>
+                </div>
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="number" id="number_five">
+                  <label for="number_five" class="custom-radio__label">5</label>
+                </div>
               </div>
-              <fieldset class="catalog-filter__form-group">
-                <legend class="catalog-filter__form-group-name">Количество спален</legend>
-                <div class="catalog-filter__inner catalog-filter__inner--five-size">
-                  <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="number" id="number_one">
-                    <label for="number_one" class="custom-radio__label">1</label>
-                  </div>
-                  <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="number" id="number_two">
-                    <label for="number_two" class="custom-radio__label">2</label>
-                  </div>
-                  <div class="custom-radio custom-radio--active">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="number" id="number_three">
-                    <label for="number_three" class="custom-radio__label">3</label>
-                  </div>
-                  <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="number" id="number_four">
-                    <label for="number_four" class="custom-radio__label">4</label>
-                  </div>
-                  <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="number" id="number_five">
-                    <label for="number_five" class="custom-radio__label">5</label>
-                  </div>
+            </fieldset>
+            <fieldset class="catalog-filter__form-group">
+              <legend class="catalog-filter__form-group-name">Тип</legend>
+              <div class="catalog-filter__inner catalog-filter__inner--grid-flat">
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="types" id="flat">
+                  <label for="flat" class="custom-radio__label">Квартира</label>
                 </div>
-              </fieldset>
-              <fieldset class="catalog-filter__form-group">
-                <legend class="catalog-filter__form-group-name">Тип</legend>
-                <div class="catalog-filter__inner catalog-filter__inner--grid-flat">
-                  <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="types" id="flat">
-                    <label for="flat" class="custom-radio__label">Квартира</label>
-                  </div>
-                  <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="types" id="penthouse">
-                    <label for="penthouse" class="custom-radio__label custom-radio__label--border">Пентхаус</label>
-                  </div>
-                  <div class="custom-radio custom-radio--xl">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="types" id="villa">
-                    <label for="villa" class="custom-radio__label">Вилла</label>
-                  </div>
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="types" id="penthouse">
+                  <label for="penthouse" class="custom-radio__label custom-radio__label--border">Пентхаус</label>
                 </div>
-                <button class="catalog-filter-form-btn-second catalog-filter-form-btn-second--active button button--square" type="submit" id="sender_run">
+                <div class="custom-radio custom-radio--xl">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="types" id="villa">
+                  <label for="villa" class="custom-radio__label">Вилла</label>
+                </div>
+              </div>
+              <button
+                class="catalog-filter-form-btn-second catalog-filter-form-btn-second--active button__square"
+                type="submit" id="sender_run">
                 Показать 4 квартиры
               </button>
-              </fieldset>
-              <fieldset class="catalog-filter__form-group">
-                <legend class="catalog-filter__form-group-name">Размер</legend>
-                <div class="catalog-filter__inner catalog-filter__inner--foure-size">
-                  <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="size" id="s">
-                    <label for="s" class="custom-radio__label">S</label>
-                  </div>
-                  <div class="custom-radio custom-radio--active ">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="size" id="m">
-                    <label for="m" class="custom-radio__label">M</label>
-                  </div>
-                  <div class="custom-radio custom-radio--active">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="size" id="l">
-                    <label for="l" class="custom-radio__label">L</label>
-                  </div>
-                  <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="size" id="xl">
-                    <label for="xl" class="custom-radio__label">XL</label>
-                  </div>
+            </fieldset>
+            <fieldset class="catalog-filter__form-group">
+              <legend class="catalog-filter__form-group-name">Размер</legend>
+              <div class="catalog-filter__inner catalog-filter__inner--foure-size">
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="size" id="s">
+                  <label for="s" class="custom-radio__label">S</label>
                 </div>
-              </fieldset>
-              <fieldset class="catalog-filter__form-group">
-                <legend class="catalog-filter__form-group-name">Этаж</legend>
-                <div class="catalog-filter__inner catalog-filter__inner--foure-size">
-                  <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="floor" id="floor_one">
-                    <label for="floor_one" class="custom-radio__label">1</label>
-                  </div>
-                  <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="floor" id="floor_two">
-                    <label for="floor_two" class="custom-radio__label">2</label>
-                  </div>
-                  <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="floor" id="floor_three">
-                    <label for="floor_three" class="custom-radio__label">3</label>
-                  </div>
-                  <div class="custom-radio">
-                    <input class="custom-radio__field visually-hidden" type="radio" name="floor" id="floor_four">
-                    <label for="floor_four" class="custom-radio__label">4</label>
-                  </div>
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="size" id="m">
+                  <label for="m" class="custom-radio__label">M</label>
                 </div>
-              </fieldset>
-              <fieldset class="catalog-filter__form-group">
-                <legend class="catalog-filter__form-group-name">Преимущества</legend>
-                <div class="catalog-filter__inner catalog-filter__inner--column">
-                  <div class="custom-checkbox">
-                    <input class="custom-checkbox__field visually-hidden" type="checkbox" id="fireplace"
-                      name="fireplace">
-                    <label class="custom-checkbox__label" for="fireplace">Камин</label>
-                  </div>
-                  <div class="custom-checkbox">
-                    <input class="custom-checkbox__field visually-hidden" type="checkbox" id="pool" name="pool">
-                    <label class="custom-checkbox__label" for="pool">Бассейн</label>
-                  </div>
-                  <div class="custom-checkbox">
-                    <input class="custom-checkbox__field visually-hidden" type="checkbox" id="terrace" name="terrace">
-                    <label class="custom-checkbox__label" for="terrace">Терраса</label>
-                  </div>
-                  <div class="custom-checkbox">
-                    <input class="custom-checkbox__field visually-hidden" type="checkbox" id="two-floor"
-                      name="two-floor" disabled>
-                    <label class="custom-checkbox__label" for="two-floor">Двухэтажная</label>
-                  </div>
-                  <div class="custom-checkbox">
-                    <input class="custom-checkbox__field visually-hidden" type="checkbox" id="three-floor"
-                      name="three-floor">
-                    <label class="custom-checkbox__label" for="three-floor">Трехэтажная</label>
-                  </div>
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="size" id="l">
+                  <label for="l" class="custom-radio__label">L</label>
                 </div>
-              </fieldset>
-              <fieldset class="catalog-filter__form-group ">
-                <legend class="catalog-filter__form-group-name">Балконы</legend>
-                <div class="catalog-filter__inner catalog-filter__inner--column-min">
-                  <div class="custom-checkbox">
-                    <input class="custom-checkbox__field visually-hidden" type="checkbox" id="loggia" name="loggia">
-                    <label class="custom-checkbox__label" for="loggia">Лоджия</label>
-                  </div>
-                  <div class="custom-checkbox">
-                    <input class="custom-checkbox__field visually-hidden" type="checkbox" id="nobalcony"
-                      name="nobalcony">
-                    <label class="custom-checkbox__label" for="nobalcony">Нет балкона</label>
-                  </div>
-                  <div class="custom-checkbox">
-                    <input class="custom-checkbox__field visually-hidden" type="checkbox" id="balcony" name="balcony">
-                    <label class="custom-checkbox__label" for="balcony">Балкон</label>
-                  </div>
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="size" id="xl">
+                  <label for="xl" class="custom-radio__label">XL</label>
                 </div>
-              </fieldset>
-              <fieldset class="catalog-filter__form-group">
-                <legend class="catalog-filter__form-group-name">Планировка</legend>
-                <div class="catalog-filter__inner catalog-filter__inner--column-maxmin">
-                  <div class="custom-checkbox">
-                    <input class="custom-checkbox__field visually-hidden" type="checkbox" id="linear" name="linear">
-                    <label class="custom-checkbox__label" for="linear">Линейная</label>
-                  </div>
-                  <div class="custom-checkbox">
-                    <input class="custom-checkbox__field visually-hidden" type="checkbox" id="plowing" name="plowing">
-                    <label class="custom-checkbox__label" for="plowing">Распашная</label>
-                  </div>
+              </div>
+            </fieldset>
+            <fieldset class="catalog-filter__form-group">
+              <legend class="catalog-filter__form-group-name">Этаж</legend>
+              <div class="catalog-filter__inner catalog-filter__inner--foure-size">
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="floor" id="floor_one">
+                  <label for="floor_one" class="custom-radio__label">1</label>
                 </div>
-              </fieldset>
-              <fieldset class="catalog-filter__form-group">
-                <legend class="catalog-filter__form-group-name">Ориентация по сторонам света</legend>
-                <div class="catalog-filter__inner catalog-filter__inner--column-xl">
-                  <div class="custom-checkbox">
-                    <input class="custom-checkbox__field visually-hidden" type="checkbox" name="northeast"
-                      id="northeast" disabled>
-                    <label for="northeast" class="custom-checkbox__label">Северо-восток</label>
-                  </div>
-                  <div class="custom-checkbox">
-                    <input class="custom-checkbox__field visually-hidden" type="checkbox" name="south-east"
-                      id="south-east">
-                    <label for="south-east" class="custom-checkbox__label">Юго-восток</label>
-                  </div>
-                  <div class="custom-checkbox">
-                    <input class="custom-checkbox__field visually-hidden" type="checkbox" name="southwest"
-                      id="southwest">
-                    <label for="southwest" class="custom-checkbox__label">Юго-запад</label>
-                  </div>
-                  <div class="custom-checkbox">
-                    <input class="custom-checkbox__field visually-hidden" type="checkbox" name="northwest"
-                      id="northwest">
-                    <label for="northwest" class="custom-checkbox__label">Северо-запад</label>
-                  </div>
-                  <div class="custom-checkbox">
-                    <input class="custom-checkbox__field visually-hidden" type="checkbox" name="east" id="east">
-                    <label for="east" class="custom-checkbox__label">Восток</label>
-                  </div>
-                  <div class="custom-checkbox">
-                    <input class="custom-checkbox__field visually-hidden" type="checkbox" name="south" id="south">
-                    <label for="south" class="custom-checkbox__label">Юг</label>
-                  </div>
-                  <div class="custom-checkbox">
-                    <input class="custom-checkbox__field visually-hidden" type="checkbox" name="west" id="west"
-                      disabled>
-                    <label for="west" class="custom-checkbox__label">Запад</label>
-                  </div>
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="floor" id="floor_two">
+                  <label for="floor_two" class="custom-radio__label">2</label>
                 </div>
-              </fieldset>
-              <button class="button button--xl" type="submit" id="sender">
-                Применить фильтр
-              </button>
-            </form>
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="floor" id="floor_three">
+                  <label for="floor_three" class="custom-radio__label">3</label>
+                </div>
+                <div class="custom-radio">
+                  <input class="custom-radio__field visually-hidden" type="radio" name="floor" id="floor_four">
+                  <label for="floor_four" class="custom-radio__label">4</label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="catalog-filter__form-group">
+              <legend class="catalog-filter__form-group-name">Преимущества</legend>
+              <div class="catalog-filter__inner catalog-filter__inner--column">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="fireplace" name="fireplace">
+                  <label class="custom-checkbox__label" for="fireplace">Камин</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="pool" name="pool">
+                  <label class="custom-checkbox__label" for="pool">Бассейн</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="terrace" name="terrace">
+                  <label class="custom-checkbox__label" for="terrace">Терраса</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="two-floor" name="two-floor"
+                    disabled>
+                  <label class="custom-checkbox__label" for="two-floor">Двухэтажная</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="three-floor"
+                    name="three-floor">
+                  <label class="custom-checkbox__label" for="three-floor">Трехэтажная</label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="catalog-filter__form-group ">
+              <legend class="catalog-filter__form-group-name">Балконы</legend>
+              <div class="catalog-filter__inner catalog-filter__inner--column-min">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="loggia" name="loggia">
+                  <label class="custom-checkbox__label" for="loggia">Лоджия</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="nobalcony" name="nobalcony">
+                  <label class="custom-checkbox__label" for="nobalcony">Нет балкона</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="balcony" name="balcony">
+                  <label class="custom-checkbox__label" for="balcony">Балкон</label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="catalog-filter__form-group">
+              <legend class="catalog-filter__form-group-name">Планировка</legend>
+              <div class="catalog-filter__inner catalog-filter__inner--column-maxmin">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="linear" name="linear">
+                  <label class="custom-checkbox__label" for="linear">Линейная</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" id="plowing" name="plowing">
+                  <label class="custom-checkbox__label" for="plowing">Распашная</label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="catalog-filter__form-group">
+              <legend class="catalog-filter__form-group-name">Ориентация по сторонам света</legend>
+              <div class="catalog-filter__inner catalog-filter__inner--column-xl">
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" name="northeast" id="northeast"
+                    disabled>
+                  <label for="northeast" class="custom-checkbox__label">Северо-восток</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" name="south-east"
+                    id="south-east">
+                  <label for="south-east" class="custom-checkbox__label">Юго-восток</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" name="southwest" id="southwest">
+                  <label for="southwest" class="custom-checkbox__label">Юго-запад</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" name="northwest" id="northwest">
+                  <label for="northwest" class="custom-checkbox__label">Северо-запад</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" name="east" id="east">
+                  <label for="east" class="custom-checkbox__label">Восток</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" name="south" id="south">
+                  <label for="south" class="custom-checkbox__label">Юг</label>
+                </div>
+                <div class="custom-checkbox">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" name="west" id="west" disabled>
+                  <label for="west" class="custom-checkbox__label">Запад</label>
+                </div>
+              </div>
+            </fieldset>
+            <button class="button__submit" type="submit" id="sender">
+              Применить фильтр
+            </button>
+          </form>
           <!-- Список с карточками -->
           <ul class="catalog-list">
             <li class="catalog-list__item">
@@ -475,7 +472,7 @@
 
             <li class="catalog-list__item">
               <div class="catalog-card">
-                
+
                 <a class="catalog-card__inner" href="#" aria-label="Переход на страницу квартиры">
                   <div class="catalog-card__top">
                     <p class="catalog-card__title">Квартира №31</p>
