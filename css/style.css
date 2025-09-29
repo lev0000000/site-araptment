@@ -8,12 +8,15 @@
 /* Blocks */
 @import "blocks/header.css";
 @import "blocks/btn.css";
-@import "blocks/catalogs/catalog.css";
-@import "blocks/catalogs/catalog__inner.css";
-@import "blocks/catalogs/catalog-filter.css";
-@import "blocks/catalogs/catalog-heading.css";
-@import "blocks/catalogs/catalog-list.css";
-@import "blocks/catalogs/catalog-card.css";
+@import "blocks/button-selector.css";
+@import "blocks/button-submit.css";
+@import "blocks/button-square.css";
+@import "blocks/catalog.css";
+@import "blocks/catalog__inner.css";
+@import "blocks/catalog-filter.css";
+@import "blocks/catalog-heading.css";
+@import "blocks/catalog-list.css";
+@import "blocks/catalog-card.css";
 @import "blocks/custom-radio.css";
 @import "blocks/custom-checkbox.css";
 @import "blocks/custom-input.css";

@@ -1,0 +1,27 @@
+.button-submit{
+    border: 1px solid rgba(173, 131, 97, 1);
+    border-radius: 60px;
+    padding: 12px 0;
+    color:rgba(173, 131, 97, 1);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.04em;
+}
+
+.button-submit:hover{
+    background-color:rgba(173, 131, 97, 1);
+    color: #fff;
+}
+
+.button-submit:focus-visible{
+    outline: none;
+    background-color:rgba(173, 131, 97, 1);
+    color: #fff;
+}
+
+.button-submit:disabled{
+    border-color: rgba(173, 131, 97, 0.5);
+    color: rgba(173, 131, 97, 0.5);
+    background-color: rgba(243, 243, 243, 0.5);
+}

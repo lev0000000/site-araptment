@@ -24,25 +24,6 @@
     overflow: hidden;
 }
 
-.header__selector-item{
-    background-color: rgba(243, 243, 243, 1);
-    padding: 29px 30px;
-    width: 50%;
-    display: flex;
-    gap:4px;
-    align-items: center;
-}
-
-.header__selector-item-icon{
-    padding: 6px;
-    color:#AC8361;
-}
-.header__selector-item-text{
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: -0.04em;
-}
 
 
 .header__aside{

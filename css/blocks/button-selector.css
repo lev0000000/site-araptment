@@ -1,0 +1,31 @@
+.button-selector{
+    background-color: rgba(243, 243, 243, 1);
+    padding: 29px 30px;
+    width: 50%;
+    display: flex;
+    gap:4px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.04em;
+    font-family: inherit;
+}
+
+.button-selector--active{
+    background-color: #fff;
+    color:#AC8361;
+    padding: 29px 41px;
+}
+
+.button-selector__icon{
+    padding: 6px;
+    color:#AC8361;
+}
+
+.button-selector__text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.04em;
+}

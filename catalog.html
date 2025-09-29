@@ -20,22 +20,22 @@
           </svg>
         </button>
         <div class="header__selector">
-          <button class="header__selector-item button">
-            <svg class="header__selector-item-icon" width="32" height="32">
+          <button class="button-selector">
+            <svg class="button-selector__icon" width="32" height="32">
               <use xlink:href="images/sprite.svg#icon-visual"></use>
             </svg>
-            <span class="header__selector-item-text">Визуальный выбор</span>
+            <span class="button-selector__text">Визуальный выбор</span>
           </button>
-          <div class="header__selector-item button button--active">
-            <svg class="header__selector-item-icon" width="32" height="32">
+          <button class="button-selector button-selector--active">
+            <svg class="button-selector__icon" width="32" height="32">
               <use xlink:href="images/sprite.svg#icon-setting"></use>
             </svg>
-            <span class="header__selector-item-text">По параметрам</span>
-          </div>
+            <span class="button-selector__text">По параметрам</span>
+          </button>
         </div>
         <div class="header__aside">
-          <button class="header__aside-btn">En</button>
-          <button href="#" class="header__aside-favorite">
+          <button class="header__aside-btn" type="button">En</button>
+          <button class="header__aside-favorite" type="button">
             <svg class="header__aside-favorite-icon" width="22" height="20">
               <use xlink:href="images/sprite.svg#icon-heart"></use>
             </svg>
@@ -137,7 +137,7 @@
                 </div>
               </div>
               <button
-                class="catalog-filter-form-btn-second catalog-filter-form-btn-second--active button__square"
+                class="catalog-filter-form-btn-second catalog-filter-form-btn-second--active button-square"
                 type="submit" id="sender_run">
                 Показать 4 квартиры
               </button>
@@ -276,7 +276,7 @@
                 </div>
               </div>
             </fieldset>
-            <button class="button__submit" type="submit" id="sender">
+            <button class="button-submit" type="submit" id="sender">
               Применить фильтр
             </button>
           </form>

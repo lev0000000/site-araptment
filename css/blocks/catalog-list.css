@@ -1,12 +1,12 @@
 .catalog-list {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows:  repeat(2,48.444%);
 	gap: 16px;
 	width: 100%;
 	padding: 20px 0 0;
-	padding: 0;
+	margin: 0;
 	list-style: none;
+	align-self: flex-start;
 }
 
 .catalog-list__item{

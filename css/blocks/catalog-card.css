@@ -5,16 +5,16 @@
 
 
 .catalog-card__inner:hover::after,
-.catalog-card__inner:hover::before{
+.catalog-card__inner:hover::before {
 	visibility: visible;
 }
 
-.catalog-card__inner:focus-visible{
+.catalog-card__inner:focus-visible {
 	outline: none;
 }
 
 .catalog-card__inner:focus-visible:after,
-.catalog-card__inner:focus-visible::before{
+.catalog-card__inner:focus-visible::before {
 	visibility: visible;
 }
 
@@ -115,7 +115,7 @@
 	height: 100%;
 }
 
-.catalog-card__inner::after{
+.catalog-card__inner::after {
 	content: "";
 	position: absolute;
 	visibility: hidden;
@@ -130,13 +130,13 @@
 	z-index: 1;
 }
 
-.catalog-card__inner::before{
+.catalog-card__inner::before {
 	content: "";
 	position: absolute;
 	visibility: hidden;
 	width: 100%;
 	height: 100%;
-	background-color:rgba(117, 114, 110, 0.2);
+	background-color: rgba(117, 114, 110, 0.2);
 	z-index: 1;
 }
 
@@ -145,32 +145,24 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-  width: 36px;
-  height: 36px;
-  padding: 0;
-  line-height: 0;
-  color: transparent;
-  background-color: initial;
-  border: none;
-  border-radius: 0;
+	width: 36px;
+	height: 36px;
+	padding: 0;
+	line-height: 0;
+	color: transparent;
+	background-color: initial;
+	border: none;
+	border-radius: 0;
 	cursor: pointer;
-}
-
-
-.catalog-card__btn-like:hover>.catalog-card__like-icon,
-.catalog-card__btn-like:active>.catalog-card__like-icon{
-	color: rgba(172, 131, 97, 1);
-}
-
-.catalog-card__btn-like:focus-visible{
-	outline: none;
-	
-}
-
-.catalog-card__btn-like:focus-visible{
 	outline: none;
 }
 
-.catalog-card__btn-like:focus-visible>.catalog-card__like-icon{
+
+.catalog-card__btn-like:focus-visible .catalog-card__like-icon,
+.catalog-card__btn-like:hover .catalog-card__like-icon {
 	color: rgba(239, 237, 231, 1);
+}
+
+.catalog-card__btn-like:active>.catalog-card__like-icon {
+	color: rgba(172, 131, 97, 1);
 }
